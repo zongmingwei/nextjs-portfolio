@@ -9,12 +9,13 @@ import GroupTitle from "@/components/GroupTitle";
 import { getPosts, getPhotos } from "@/lib/notion/api";
 
 export default async function Home() {
-  const { photos } = await getPhotos();
+  const { photos } = await getPhotos(5);
   const { posts } = await getPosts();
+
   return (
     <Center>
       <Hero />
-      <Photos photos={photos} />
+      <Photos photos={photos.slice(0, 5)} />
       <Posts posts={posts} />
     </Center>
   );
