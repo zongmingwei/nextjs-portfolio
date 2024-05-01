@@ -2,7 +2,6 @@
 
 import React from "react";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
 import Link from "@/components/atoms/Link";
 import ThemeSwitcher from "./ThemeSwitcher";
 import Logo from "@/components/Logo";

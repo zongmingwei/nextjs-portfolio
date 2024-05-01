@@ -6,8 +6,8 @@ import { useTheme } from "next-themes";
 import Cookies from "js-cookie";
 
 const ThemeSwitcher = function() {
-  const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   function toggleTheme() {
     // 点击图标时，切换为相反的模式
